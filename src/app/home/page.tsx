@@ -10,8 +10,8 @@ import { useRouter } from "next/navigation";
 
 import flowers from "./images/01 1.png";
 import flowers2 from "./images/01 2.png";
-// import Footer from "./footer";
-import { supabase } from "./supbaseClient";
+import Footer from "../footer";
+import { supabase } from "../supbaseClient";
 
 const Home = () => {
   const [products, setProducts] = useState<
@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <div>
       {/* HERO BANNER */}
-      <div className="container mx-auto ">
+      <div className="container mx-auto border-2">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}
@@ -94,12 +94,11 @@ const Home = () => {
             </div>
             <div className="relative">
               <Image
-                className="md:hidden"
                 style={{ position: "absolute", marginTop: "346px" }}
                 src={flowers2}
                 alt="logo1"
               />
-              <Image className="md:hidden" src={flowers} alt="logo" />
+              <Image src={flowers} alt="logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide className="d-flex justify-between items-center px-10">
@@ -129,7 +128,6 @@ const Home = () => {
 
             <div className="flex items-center justify-center w-[500px] h-[500px]">
               <Image
-                className="md:hidden"
                 src={require("./images/product-20-320x320 1.png")}
                 alt="featured plant"
                 width={350}
@@ -141,7 +139,7 @@ const Home = () => {
       </div>
 
       {/* MAIN PRODUCTS */}
-      <section className="flex gap-5 container  mt-2">
+      <section className="flex gap-5 container border-2 mt-2">
         {/* Sidebar */}
         <div style={{ width: "25%" }}>
           <h5 className="text-xl font-bold text-gray-800">Categories</h5>
@@ -177,7 +175,7 @@ const Home = () => {
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="text-[16px] font-light text-gray-800">
+                    <h3 className="text-2xl font-light text-gray-800">
                       {product.title}
                     </h3>
                     <p className="text-green-600 text-lg">${product.price}</p>
@@ -188,6 +186,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <div className="container">
+        <Footer />
+      </div>
     </div>
   );
 };
