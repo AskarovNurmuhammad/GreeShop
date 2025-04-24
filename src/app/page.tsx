@@ -94,12 +94,11 @@ const Home = () => {
             </div>
             <div className="relative">
               <Image
-                className="md:hidden"
                 style={{ position: "absolute", marginTop: "346px" }}
                 src={flowers2}
                 alt="logo1"
               />
-              <Image className="md:hidden" src={flowers} alt="logo" />
+              <Image src={flowers} alt="logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide className="d-flex justify-between items-center px-10">
@@ -129,7 +128,6 @@ const Home = () => {
 
             <div className="flex items-center justify-center w-[500px] h-[500px]">
               <Image
-                className="md:hidden"
                 src={require("./images/product-20-320x320 1.png")}
                 alt="featured plant"
                 width={350}
