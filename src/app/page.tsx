@@ -8,8 +8,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import flowers from "./images/01 1.png";
-import flowers2 from "./images/01 2.png";
+import flowers from "./images/011.png";
+import flowers2 from "./images/012.png";
 // import Footer from "./footer";
 import { supabase } from "./supbaseClient";
 
@@ -128,7 +128,7 @@ const Home = () => {
 
             <div className="flex items-center justify-center w-[500px] h-[500px]">
               <Image
-                src={require("./images/product-20-320x320 1.png")}
+                src={require("./images/product200.png")}
                 alt="featured plant"
                 width={350}
                 height={350}
