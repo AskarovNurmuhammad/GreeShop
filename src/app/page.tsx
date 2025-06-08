@@ -8,8 +8,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import flowers from "./images/011.png";
-import flowers2 from "./images/012.png"; // Ensure the file exists in the specified path
+import flowers from "./images/birinchi.png";
+import flowers2 from "./images/ikkinchi.png"; // Ensure the file exists in the specified path
 // import Footer from "./footer";
 import { supabase } from "./supbaseClient";
 
